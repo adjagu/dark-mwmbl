@@ -1,0 +1,133 @@
+/* ==UserStyle==
+@name			Dark MWMBL
+@version		0.0.1
+@description	MWMBL.org dark UserCSS theme.
+@license		GPL-2.0-only
+@author			AdJaGu (https://github.com/AdJaGu)
+@namespace		https://github.com/AdJaGu/dark-mwmbl
+@homepageURL	https://github.com/AdJaGu/dark-mwmbl
+@supportURL		https://github.com/AdJaGu/dark-mwmbl/issues
+@updateURL		https://github.com/AdJaGu/dark-mwmbl/blob/main/dark-mwmbl.user.css
+==/UserStyle== */
+
+@-moz-document domain("mwmbl.org") {
+	/** MWMBL.org **/
+	/** reset.css
+		Revert "color", "font-family", and "font-size"
+		from "*, *::before, *::after" section of css file.
+	**/
+	*,
+	*::before,
+	*::after {
+		color: revert;
+		font-family: revert;
+		font-size: revert;
+	}
+
+	html {
+		font-family: var(--regular-font);
+		font-size: 1rem;
+		scrollbar-color: #696969 #1b1b1b;
+	}
+
+	body {
+		background-color: #1d2021;
+		color: #cacaca;
+		font-size: 1rem;
+		transition: none;
+	}
+
+	.search-menu {
+		background-color: #1d2021e6;
+	}
+
+	.search-bar i {
+		color: #185adb;
+		opacity: 1;
+	}
+
+	.search-bar-input {
+		background-color: #696969;
+		box-shadow: 0 0 0 0 transparent;
+		color: #ffffff;
+		font-size: 1rem;
+		font-weight: 700;
+		transition: none;
+		opacity: .5;
+	}
+
+	.search-bar-input:focus {
+		background-color: #ffffff;
+		color: #696969;
+		box-shadow: 0 0 0 .2rem #185adb;
+		opacity: 1;
+	}
+
+	.search-bar-input::placeholder {
+		color: #cacaca;
+		opacity: 1;
+	}
+
+	.search-bar-input:focus::placeholder {
+		color: #696969;
+	}
+
+	.result a {
+		color: #cacaca;
+		outline: 3px solid transparent;
+		outline-offset: 3px;
+		transition: none;
+	}
+
+	.result:hover a,
+	.result a:focus {
+		background-color: #343434;
+	}
+
+	.result a:focus {
+		outline: 3px solid #185adb;
+	}
+
+	.result .title,
+	.result .title>* {
+		color: #185adb;
+	}
+
+	.result .extract {
+		opacity: 1;
+	}
+
+	.empty-result,
+	.home {
+		font-weight: 700;
+		opacity: 1;
+	}
+
+	.home h1 {
+		font-size: 1rem;
+	}
+
+	.footer-text {
+		font-size: .875rem;
+		opacity: 1;
+	}
+
+	.footer-link {
+		background-color: #343434;
+		box-shadow: 0 0 0 0 transparent;
+		color: #cacaca;
+		transition: none;
+	}
+
+	.footer-link:hover {
+		box-shadow: 0 0 0 .2rem #185adb;
+	}
+
+	.footer-link i {
+		color: inherit;
+	}
+
+	.footer-link>span {
+		color: inherit;
+	}
+}
